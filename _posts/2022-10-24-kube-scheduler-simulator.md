@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "kubernetes scheduler simulator에 대한 소개"
+title: "kubernetes scheduler simulator"
 subtitle: "custom scheduler 개발 환경 구축하는 방법을 소개합니다"
 date: 2022-10-24 23:45:13 -0400
 background: '/img/posts/06.jpg'
@@ -162,3 +162,8 @@ index 82c0043..ae02597 100644
 - `kube-scheduler-simulator`를 이용해 real cluster없이, 커스텀 스케줄러를 개발할 수 있습니다. 
 
 - `mini-kube-scheduler/minisched`를 커스텀 스케줄러의 베이스 코드로 사용할 수 있습니다.
+
+# Refereneces
+- [https://www.cncf.io/blog/2022/08/24/writing-your-own-scheduler-with-kube-scheduler-simulator](https://www.cncf.io/blog/2022/08/24/writing-your-own-scheduler-with-kube-scheduler-simulator)
+- [https://github.com/kubernetes-sigs/kube-scheduler-simulator](https://github.com/kubernetes-sigs/kube-scheduler-simulator)
+- [https://github.com/sanposhiho/mini-kube-scheduler/tree/initial-random-scheduler/minisched](https://github.com/sanposhiho/mini-kube-scheduler/tree/initial-random-scheduler/minisched)
