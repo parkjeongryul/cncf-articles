@@ -3,7 +3,7 @@ layout: post
 title: "쿠버네티스 스케줄러에 대하여"
 subtitle: "쿠베 스케줄러는 과연 무엇일까?"
 date: 2022-01-28 23:45:13 -0400
-background: '/img/posts/07.jpg'
+background: '/img/posts/07.gif'
 ---
 
 
