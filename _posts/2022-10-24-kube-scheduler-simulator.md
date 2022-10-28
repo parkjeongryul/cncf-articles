@@ -45,11 +45,12 @@ background: '/img/posts/06.jpg'
 
 `mini-kube-scheduler`라는 기본적인 스케줄러 코드에서 시작하겠습니다.
 
-1. Copy mini-kube-scheduler/minisched (branch : initial-random-scheduler) into kube-scheduler-simulator
+1. mini-kube-scheduler/minisched의 코드를 kube-scheduler-simulator에 복사합니다. 예제에서는 `initial-random-scheduler` branch의 코드를 사용하였습니다.
+이 코드는 랜덤하게 node를 선택하여 pod를 스케줄링하는 간단한 스케줄러입니다.
 
 2. kube-scheduler-simulator/scheduler/scheduler.go에서 minisched를 사용하도록 변경합니다. (변경 사항은 아래 코드 참고)
 
-3. Examine the behavior change (완전 랜덤한 스케줄링 정책으로 코드를 변경하였습니다)
+3. kube-scheduler-simulator를 실행하여 스케줄링 동작을 확인합니다.
 
 ```golang
 Patch license: Apache-2.0 (same as kube-scheduler-simulator)
@@ -132,9 +133,9 @@ index a5d5ca2..8eb931d 100644
 
 # Modify the algorithm
 
-minisched/minisched.go를 수정하여 스케줄링 알고리즘을 구현합니다..
+minisched/minisched.go를 수정하여 스케줄링 알고리즘을 구현합니다.
 
-다음과 같이 pod를 첫번째 노드에 무조건 스케줄링되도록 구현해보았습니다.
+다음과 같이 pod를 항상 첫번째 노드에 스케줄링되도록 구현해보았습니다.
 
 ```golang
 Patch license: MIT (same as mini-kube-scheduler)
