@@ -8,6 +8,7 @@ background: '/img/posts/06.jpg'
 
 # kubernetes scheduler simulator란?
 
+@@@@@@
 쿠버네티스의 스케줄러는 다양한 설정을 지원하기 때문에, 대부분의 경우 Custom 스케줄러를 직접 구현할 필요가 없습니다.
 > 쿠버네티스의 스케줄러 플러그인 예시
 <img width="720" alt="image" src="https://user-images.githubusercontent.com/25222969/198247597-7f9bf896-e39b-4ab5-8424-af3d38a73e5b.png">
